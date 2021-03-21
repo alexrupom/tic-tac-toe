@@ -1,6 +1,6 @@
 import {PLAYER_TWO_NAME} from '../actions/playersActions';
 
-const playerTwoReducer = (state = {name: 'Player Two'}, action) => {
+const playerTwo = (state = {name: 'Player Two', mark: 'O'}, action) => {
     switch (action.type) {
         case PLAYER_TWO_NAME:
             return {...state, name: action.name};
@@ -9,4 +9,4 @@ const playerTwoReducer = (state = {name: 'Player Two'}, action) => {
     }
 };
 
-export default playerTwoReducer;
+export default playerTwo;
